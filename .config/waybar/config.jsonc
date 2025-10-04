@@ -1,11 +1,8 @@
 {
   "layer": "top",
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": [""],
-  "modules-right": ["pulseaudio", "network", "battery", "clock"],
-  "hyprland/window": {
-    "max-length": 50
-  },
+  "modules-left": ["clock", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["pulseaudio", "network", "battery"],
   "battery": {
     "format": "{capacity}% {icon}",
     "format-icons": ["", "", "", "", ""]
@@ -14,15 +11,9 @@
     "format-alt": "{:%a, %d. %b  %H:%M}"
   },
   "hyprland/workspaces": {
-    "format": "{name}",
+    "format": "{icon}",
     "format-icons": {
-      "1": "1",
-      "2": "2",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "active": "",
-      "default": ""
+      "active": ""
     },
     "persistent-workspaces": {
       "*": 5, // 5 workspaces by default on every monitor
@@ -30,8 +21,9 @@
     }
   },
   "hyprland/window": {
-    "format": "{}",
-    "separate-outputs": true
+    "format": "{initialTitle}",
+    "separate-outputs": true,
+    "max-length": 50
   },
   "pulseaudio": {
     "format": "{volume}% {icon}",
@@ -57,7 +49,7 @@
     "interface": "enp4s0",
     "format": "{ifname}",
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "format-ethernet": "Ethernet",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
