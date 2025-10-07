@@ -1,7 +1,7 @@
 #!/bin/bash
 
-IMAGE_PATH_1="/home/dani/.local/bin/backgrounds/1-nord.png"
-IMAGE_PATH_2="/home/dani/.local/bin/backgrounds/2-nord.png"
+IMAGE_PATH_1="/home/dani/.local/bin/themes/nord/1-nord.png"
+IMAGE_PATH_2="/home/dani/.local/bin/themes/nord/2-nord.png"
 
 img=$1
 
