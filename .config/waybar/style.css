@@ -1,18 +1,18 @@
 @import "colors.css";
 
 * {
-    border: none;
-    border-radius: 0;
-    font-family: Adwaita Mono, Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    min-height: 0;
-    margin: 0;
-    padding: 0;
+  border: none;
+  border-radius: 0;
+  font-family: Adwaita Mono, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 window#waybar {
-    background: transparent;
-    color: @background;
+  background: transparent;
+  color: @background;
 }
 
 tooltip {
@@ -25,34 +25,33 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 5px 15px;
-    margin: 7px;
-    border-radius: 10px;
-    background: @primary;
-    color: @background;
+  padding: 5px 15px;
+  margin: 7px;
+  border-radius: 6px;
+  background: @primary;
+  color: @background;
 }
 
 #workspaces button.active {
-    background: @background;
-    color: @primary;
+  background: @background;
+  color: @primary;
 }
 
 #window {
-    padding: 5px 15px;
-    margin: 7px;
-    border-radius: 100px;
-    background: transparent;
-    color: @primary;
+  padding: 5px 15px;
+  margin: 7px;
+  border-radius: 8px;
+  background: transparent;
+  color: @primary;
 }
 
 #clock,
 #battery,
 #pulseaudio,
 #network {
-    padding: 5px 15px;
-    margin: 7px;
-    border-radius: 100px;
-    background-color: @primary;
-    color: @background;
+  padding: 5px 15px;
+  margin: 7px;
+  border-radius: 8px;
+  background-color: @primary;
+  color: @background;
 }
-
