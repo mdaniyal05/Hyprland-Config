@@ -19,15 +19,16 @@
 
 window#waybar {
   background: transparent;
-  color: @tertiary;
+  color: @on_surface;
 }
 
 tooltip {
   background: @background;
+  border-radius: 5px;
 }
 
 tooltip label {
-  color: @tertiary;
+  color: @on_surface;
 }
 
 #workspaces {
@@ -38,7 +39,7 @@ tooltip label {
 
 #workspaces button {
   background: @on_primary_fixed;
-  color: @tertiary;
+  color: @on_surface;
   margin: 5px;
   padding: 5px 20px;
   border-radius: 5px;
@@ -46,7 +47,7 @@ tooltip label {
 
 #workspaces button.active {
   background: @inverse_primary;
-  color: @tertiary;
+  color: @on_surface;
 }
 
 #clock,
@@ -67,7 +68,7 @@ tooltip label {
 
 #battery {
   background: @background;
-  color: @tertiary;
+  color: @on_surface;
 }
 
 #battery.charging {
