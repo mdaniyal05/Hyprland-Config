@@ -3,55 +3,91 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: Adwaita Mono, Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: "FiraCode Nerd Font", Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
   min-height: 0;
   margin: 0;
   padding: 0;
 }
 
+#window {
+  background: @background;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
 window#waybar {
   background: transparent;
-  color: @background;
+  color: @tertiary;
 }
 
 tooltip {
-  background: @primary;
-  border: 1px solid rgba(100, 114, 125, 0.5);
+  background: @background;
 }
 
 tooltip label {
-  color: @on_surface;
+  color: @tertiary;
+}
+
+#workspaces {
+  background: @background;
+  margin: 5px;
+  border-radius: 5px;
 }
 
 #workspaces button {
-  padding: 5px 15px;
-  margin: 7px;
-  border-radius: 6px;
-  background: @primary;
-  color: @background;
+  background: @on_primary_fixed;
+  color: @tertiary;
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 5px;
 }
 
 #workspaces button.active {
-  background: @background;
-  color: @primary;
-}
-
-#window {
-  padding: 5px 15px;
-  margin: 7px;
-  border-radius: 8px;
-  background: transparent;
-  color: @primary;
+  background: @inverse_primary;
+  color: @tertiary;
 }
 
 #clock,
 #battery,
 #pulseaudio,
 #network {
-  padding: 5px 15px;
-  margin: 7px;
-  border-radius: 8px;
-  background-color: @primary;
-  color: @background;
+  padding: 5px 20px;
+  margin: 5px;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#network {
+  background: @background;
+  border-radius: 5px;
+}
+
+#battery {
+  background: @background;
+  color: @tertiary;
+}
+
+#battery.charging {
+  color: #26a65b;
+  background: @background;
+}
+
+@keyframes blink {
+  to {
+    background-color: @error;
+    color: black;
+  }
+}
+
+#battery.warning:not(.charging) {
+  background: @on_error;
+  color: white;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
