@@ -53,7 +53,8 @@ tooltip label {
 #clock,
 #battery,
 #pulseaudio,
-#network {
+#network,
+#bluetooth {
   padding: 5px 20px;
   margin: 5px;
 }
@@ -61,7 +62,8 @@ tooltip label {
 #clock,
 #battery,
 #pulseaudio,
-#network {
+#network,
+#bluetooth {
   background: @background;
   border-radius: 5px;
 }
