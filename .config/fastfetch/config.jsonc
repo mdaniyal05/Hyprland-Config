@@ -130,15 +130,11 @@
       "type": "custom",
       "format": "\u002b└───────────────────────────────────────────────────────────┘"
     },
-
-    //        {
-    //            "type": "colors"
-    //        },
-
     {
       "type": "colors",
       "paddingLeft": 2,
       "symbol": "circle"
-    }
+    },
+    "break"
   ]
 }
